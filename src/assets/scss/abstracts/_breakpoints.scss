@@ -1,0 +1,89 @@
+//very large devices
+@mixin adaptive-2560 {
+  @media (min-width:2401px) and (max-width: 2650.98px) {
+    @content;
+  }
+}
+
+@mixin adaptive-xxl {
+  @media (max-width: $xlDesktopWidth) {
+    @content;
+  }
+}
+
+@mixin adaptive-1600 {
+  @media (max-width: $lDesktopWidth) {
+    @content;
+  }
+}
+
+
+@mixin adaptive-1536 {
+  @media (max-width: 1536.98px) {
+    @content;
+  }
+}
+
+
+@mixin adaptive-1460 {
+  @media (max-width: 1460.98px) {
+    @content;
+  }
+}
+
+
+// Large devices (desktops, less than 1366.98px)
+@mixin adaptive-l {
+  @media (max-width: $desktopWidth) {
+    @content;
+  }
+}
+
+
+// Medium devices (tablets, less than 992px)
+@mixin adaptive-m {
+  @media (max-width: $smDesktopWidth) {
+    @content;
+  }
+}
+
+
+@mixin adaptive-768 {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin adaptive-767 {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
+
+@mixin adaptive-480 {
+  @media (max-width: $phoneWidth) {
+    @content;
+  }
+}
+
+@mixin adaptive-414 { 
+  @media (max-width: 414.98px) {
+    @content;
+  }
+}
+
+
+
+@mixin adaptive-360 { 
+  @media (max-width: 360.98px) {
+    @content;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@mixin adaptive-xs {
+  @media (max-width: $smPhoneWidth) {
+    @content;
+  }
+}

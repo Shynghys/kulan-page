@@ -1,0 +1,60 @@
+.header {
+	position: relative;
+
+	width: 100%;
+	height: auto;
+
+	z-index: 101;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background: #f6f6f6;
+
+	padding: 13px 30px 14px 30px;
+	&__left {
+		font-size: 12px;
+		line-height: 15px;
+	}
+	&__right {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+
+		font-size: 16px;
+		line-height: 19px;
+
+		.block {
+			margin-right: 32px;
+		}
+	}
+	.block {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		&__item {
+			margin-right: 30px;
+		}
+		&__icon {
+			width: 24px;
+			height: 24px;
+			margin: 0 7px;
+			&-mini {
+				width: 10px;
+				height: auto;
+				margin: 0 7px;
+			}
+		}
+	}
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+
+	font-size: 14px;
+	line-height: 17px;
+
+	color: #252525;
+}
