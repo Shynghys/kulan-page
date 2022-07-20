@@ -114,4 +114,46 @@
 			width: auto;
 		}
 	}
+	@include adaptive-480 {
+		.hero {
+			display: grid;
+			grid-template: auto/1fr;
+			.slider {
+				&__text {
+					font-size: 20px;
+					line-height: 25px;
+				}
+			}
+			.podbor {
+				&__card {
+					grid-template: auto/55% 45%;
+				}
+				&__title {
+					font-size: 15px;
+					line-height: 20px;
+				}
+				&__desc {
+					font-size: 12px;
+				}
+				&__btn {
+					padding: 10px 15px;
+					font-size: 14px;
+				}
+			}
+		}
+
+		.brands {
+			&__slider {
+				display: grid;
+				grid-template: auto/1fr 1fr;
+				gap: 20px;
+			}
+			&__img {
+				height: 50px;
+			}
+			&__text {
+				font-size: 13px;
+			}
+		}
+	}
 }

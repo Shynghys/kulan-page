@@ -64,7 +64,30 @@
 	line-height: 17px;
 
 	color: #252525;
-}
-.header-container {
-	background: #f6f6f6;
+	.hamburger,
+	&__nav {
+		display: none;
+	}
+	@include adaptive-480 {
+		&__middle,
+		&__right {
+			display: none;
+		}
+		.hamburger,
+		&__nav {
+			display: block;
+		}
+		.hamburger {
+			&-inner,
+			&-inner::before,
+			&-inner::after {
+				background-color: #252525;
+			}
+		}
+		.hamburger.is-active .hamburger-inner,
+		.hamburger.is-active .hamburger-inner::before,
+		.hamburger.is-active .hamburger-inner::after {
+			background-color: #252525;
+		}
+	}
 }

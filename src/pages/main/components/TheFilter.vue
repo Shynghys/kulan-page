@@ -7,11 +7,6 @@
 		/>
 
 		<div class="button" @click="toggleMenuStatus">
-			<!-- <img
-				src="@/assets/img/pages/mainpage/fi_menu.svg"
-				alt=""
-				class="button__icon"
-			/> -->
 			<button
 				class="hamburger hamburger--spin"
 				:class="menuStatus ? 'is-active' : ''"

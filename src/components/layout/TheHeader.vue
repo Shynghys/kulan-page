@@ -18,7 +18,7 @@
 				</div>
 			</div>
 
-			<div class="block">
+			<div class="header__middle">
 				<router-link
 					to="/"
 					v-for="(item, index) in header"
@@ -53,7 +53,19 @@
 					/>
 				</div>
 			</div>
+			<button
+				class="hamburger hamburger--spin"
+				:class="menuStatus ? 'is-active' : ''"
+				type="button"
+			>
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
 		</header>
+		<div class="header__nav">
+			<mobile-menu></mobile-menu>
+		</div>
 	</div>
 </template>
 

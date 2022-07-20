@@ -13,6 +13,7 @@
 	font-style: normal;
 	padding: 20px 0;
 	&__icon {
+		grid-area: logo;
 		width: 80px;
 		height: 80px;
 		&-mini {
@@ -21,6 +22,7 @@
 		}
 	}
 	.button {
+		grid-area: btn;
 		cursor: pointer;
 		display: flex;
 		place-items: center;
@@ -38,6 +40,7 @@
 		}
 	}
 	.search {
+		grid-area: search;
 		display: flex;
 
 		justify-content: space-between;
@@ -79,6 +82,7 @@
 		}
 	}
 	.services {
+		grid-area: services;
 		display: flex;
 		gap: 35px;
 		&__block {
@@ -97,6 +101,17 @@
 			font-size: 14px;
 			line-height: 17px;
 			color: #252525;
+		}
+	}
+	@include adaptive-480 {
+		display: grid;
+		grid-template-areas:
+			"logo btn"
+			"search search"
+			"services services";
+
+		.search {
+			width: 100%;
 		}
 	}
 }
