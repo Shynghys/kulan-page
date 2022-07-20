@@ -1,9 +1,6 @@
 .header {
 	position: relative;
 
-	width: 100%;
-	height: auto;
-
 	z-index: 101;
 
 	display: flex;
@@ -11,8 +8,9 @@
 	justify-content: space-between;
 	align-items: center;
 	background: #f6f6f6;
-
-	padding: 13px 30px 14px 30px;
+	color: #252525;
+	padding: 15px 0;
+	overflow: visible;
 	&__left {
 		font-size: 12px;
 		line-height: 15px;
@@ -26,7 +24,7 @@
 		font-size: 16px;
 		line-height: 19px;
 
-		.block {
+		.block:first-child {
 			margin-right: 32px;
 		}
 	}
@@ -48,6 +46,15 @@
 				margin: 0 7px;
 			}
 		}
+		&__text {
+			color: #252525;
+			font-family: "Inter";
+			font-style: normal;
+			font-weight: 400;
+
+			font-size: 14px;
+			line-height: 17px;
+		}
 	}
 	font-family: "Inter";
 	font-style: normal;
@@ -57,4 +64,7 @@
 	line-height: 17px;
 
 	color: #252525;
+}
+.header-container {
+	background: #f6f6f6;
 }

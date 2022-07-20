@@ -1,6 +1,10 @@
 .mainpage {
 	.hero {
-		display: flex;
+		width: 100%;
+		display: grid;
+		grid-template: auto/70% 30%;
+	}
+	.slider {
 	}
 	.podbor {
 		&__card {

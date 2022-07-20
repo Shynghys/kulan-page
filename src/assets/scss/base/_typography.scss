@@ -1,240 +1,112 @@
-/*  Fonts here
-see more: https://github.com/vedees/webpack-template/blob/master/README.md#import-js-files */
-
 @font-face {
-	font-family:'Montserrat';
-	src: url('~@/assets/fonts/Montserrat-Thin.ttf') format('ttf'),
-		 url('~@/assets/fonts/Montserrat-Thin.woff') format('woff'),
-		 url('~@/assets/fonts/Montserrat-Thin.woff2') format('woff2'),
-		 url('~@/assets/fonts/Montserrat-Thin.svg') format('svg'),
-		 url('~@/assets/fonts/Montserrat-Thin.eot') format('eot');
+	font-family: "Inter";
+	font-style: normal;
 	font-weight: 100;
-    font-style: normal;
-    font-display: swap;
+	font-display: swap;
+	src: url("/fonts/Inter-Thin.ttf ") format("ttf");
+}
+@font-face {
+	font-family: "Inter";
+	font-style: italic;
+	font-weight: 100;
+	font-display: swap;
+	src: url("/fonts/Inter-ThinItalic.ttf ") format("ttf");
 }
 
 @font-face {
-	font-family:'Montserrat';
-	src: url('~@/assets/fonts/Montserrat-ExtraLight.ttf') format('ttf'),
-		 url('~@/assets/fonts/Montserrat-ExtraLight.woff') format('woff'),
-		 url('~@/assets/fonts/Montserrat-ExtraLight.woff2') format('woff2'),
-		 url('~@/assets/fonts/Montserrat-ExtraLight.svg') format('svg'),
-		 url('~@/assets/fonts/Montserrat-ExtraLight.eot') format('eot');
+	font-family: "Inter";
+	font-style: normal;
 	font-weight: 200;
-    font-style: normal;
-    font-display: swap;
+	font-display: swap;
+	src: url("/fonts/Inter-ExtraLight.ttf ") format("ttf");
+}
+@font-face {
+	font-family: "Inter";
+	font-style: italic;
+	font-weight: 200;
+	font-display: swap;
+	src: url("/fonts/Inter-ExtraLightItalic.ttf ") format("ttf");
 }
 
 @font-face {
-	font-family:'Montserrat';
-	src: url('~@/assets/fonts/Montserrat-Light.ttf') format('ttf'),
-		 url('~@/assets/fonts/Montserrat-Light.woff') format('woff'),
-		 url('~@/assets/fonts/Montserrat-Light.woff2') format('woff2'),
-		 url('~@/assets/fonts/Montserrat-Light.svg') format('svg'),
-		 url('~@/assets/fonts/Montserrat-Light.eot') format('eot');
+	font-family: "Inter";
+	font-style: normal;
 	font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+	font-display: swap;
+	src: url("/fonts/Inter-Light.ttf ") format("ttf");
+}
+@font-face {
+	font-family: "Inter";
+	font-style: italic;
+	font-weight: 300;
+	font-display: swap;
+	src: url("/fonts/Inter-LightItalic.ttf ") format("ttf");
 }
 
-
 @font-face {
-	font-family:'Montserrat';
-	src: url('~@/assets/fonts/Montserrat-Regular.ttf') format('ttf'),
-		 url('~@/assets/fonts/Montserrat-Regular.woff') format('woff'),
-		 url('~@/assets/fonts/Montserrat-Regular.woff2') format('woff2'),
-		 url('~@/assets/fonts/Montserrat-Regular.svg') format('svg'),
-		 url('~@/assets/fonts/Montserrat-Regular.eot') format('eot');
+	font-family: "Inter";
+	font-style: normal;
 	font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+	font-display: swap;
+	src: url("/fonts/Inter-Regular.ttf ") format("ttf");
+}
+@font-face {
+	font-family: "Inter";
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: url("/fonts/Inter-Italic.ttf ") format("ttf");
 }
 
-
-
 @font-face {
-	font-family:'Montserrat';
-	src: url('~@/assets/fonts/Montserrat-Medium.ttf') format('ttf'),
-		 url('~@/assets/fonts/Montserrat-Medium.woff') format('woff'),
-		 url('~@/assets/fonts/Montserrat-Medium.woff2') format('woff2'),
-		 url('~@/assets/fonts/Montserrat-Medium.svg') format('svg'),
-		 url('~@/assets/fonts/Montserrat-Medium.eot') format('eot');
+	font-family: "Inter";
+	font-style: normal;
 	font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+	font-display: swap;
+	src: url("/fonts/Inter-Medium.ttf ") format("ttf");
+}
+@font-face {
+	font-family: "Inter";
+	font-style: italic;
+	font-weight: 500;
+	font-display: swap;
+	src: url("/fonts/Inter-MediumItalic.ttf ") format("ttf");
 }
 
 @font-face {
-	font-family:'Montserrat';
-	src: url('~@/assets/fonts/Montserrat-SemiBold.ttf') format('ttf'),
-		 url('~@/assets/fonts/Montserrat-SemiBold.woff') format('woff'),
-		 url('~@/assets/fonts/Montserrat-SemiBold.woff2') format('woff2'),
-		 url('~@/assets/fonts/Montserrat-SemiBold.svg') format('svg'),
-		 url('~@/assets/fonts/Montserrat-SemiBold.eot') format('eot');
+	font-family: "Inter";
+	font-style: normal;
 	font-weight: 600;
-    font-style: normal;
-    font-display: swap;
+	font-display: swap;
+	src: url("/fonts/Inter-SemiBold.ttf ") format("ttf");
+}
+@font-face {
+	font-family: "Inter";
+	font-style: italic;
+	font-weight: 600;
+	font-display: swap;
+	src: url("/fonts/Inter-SemiBoldItalic.ttf ") format("ttf");
 }
 
-
 @font-face {
-	font-family:'Montserrat';
-	src: url('~@/assets/fonts/Montserrat-Bold.ttf') format('ttf'),
-		 url('~@/assets/fonts/Montserrat-Bold.woff') format('woff'),
-		 url('~@/assets/fonts/Montserrat-Bold.woff2') format('woff2'),
-		 url('~@/assets/fonts/Montserrat-Bold.svg') format('svg'),
-		 url('~@/assets/fonts/Montserrat-Bold.eot') format('eot');
+	font-family: "Inter";
+	font-style: normal;
 	font-weight: 700;
-    font-style: normal;
-    font-display: swap;
+	font-display: swap;
+	src: url("/fonts/Inter-Bold.ttf ") format("ttf");
 }
 
 @font-face {
-	font-family:'Montserrat';
-	src: url('~@/assets/fonts/Montserrat-ExtraBold.ttf') format('ttf'),
-		 url('~@/assets/fonts/Montserrat-ExtraBold.woff') format('woff'),
-		 url('~@/assets/fonts/Montserrat-ExtraBold.woff2') format('woff2'),
-		 url('~@/assets/fonts/Montserrat-ExtraBold.svg') format('svg'),
-		 url('~@/assets/fonts/Montserrat-ExtraBold.eot') format('eot');
+	font-family: "Inter";
+	font-style: normal;
 	font-weight: 800;
-    font-style: normal;
-    font-display: swap;
+	font-display: swap;
+	src: url("/fonts/Inter-ExtraBold.ttf ") format("ttf");
 }
-
-
 @font-face {
-	font-family:'Montserrat';
-	src: url('~@/assets/fonts/Montserrat-Black.ttf') format('ttf'),
-		 url('~@/assets/fonts/Montserrat-Black.woff') format('woff'),
-		 url('~@/assets/fonts/Montserrat-Black.woff2') format('woff2'),
-		 url('~@/assets/fonts/Montserrat-Black.svg') format('svg'),
-		 url('~@/assets/fonts/Montserrat-Black.eot') format('eot');
-	font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-@font-face {
-	font-family:'Eurostile';
-	src: url('~@/assets/fonts/Eurostile-Bla.ttf') format('ttf'),
-		 url('~@/assets/fonts/Eurostile-Bla.woff') format('woff'),
-		 url('~@/assets/fonts/Eurostile-Black.woff2') format('woff2'),
-		 url('~@/assets/fonts/Eurostile-Bla.svg') format('svg'),
-		 url('~@/assets/fonts/Eurostile-Black.eot') format('eot');
-	font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-@font-face {
-	font-family:'Eurostile';
-	src: url('~@/assets/fonts/Eurostile-Bol.ttf') format('ttf'),
-		 url('~@/assets/fonts/Eurostile-Bol.woff') format('woff'),
-		 url('~@/assets/fonts/Eurostile-Bold.woff2') format('woff2'),
-		 url('~@/assets/fonts/Eurostile-Bol.svg') format('svg'),
-		 url('~@/assets/fonts/Eurostile-Bold.eot') format('eot');
+	font-family: "Inter";
+	font-style: italic;
 	font-weight: 800;
-    font-style: normal;
-    font-display: swap;
+	font-display: swap;
+	src: url("/fonts/Inter-ExtraBoldItalic.ttf ") format("ttf");
 }
-
-
-@font-face {
-	font-family:'Eurostile';
-	src: url('~@/assets/fonts/Eurostile-Hea.ttf') format('ttf'),
-		 url('~@/assets/fonts/Eurostile-Hea.woff') format('woff'),
-		 url('~@/assets/fonts/Eurostile-Heavy.woff2') format('woff2'),
-		 url('~@/assets/fonts/Eurostile-Hea.svg') format('svg'),
-		 url('~@/assets/fonts/Eurostile-Heavy.eot') format('eot');
-	font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-@font-face {
-	font-family:'Eurostile';
-	src: url('~@/assets/fonts/Eurostile-Med.ttf') format('ttf'),
-		 url('~@/assets/fonts/Eurostile-Med.woff') format('woff'),
-		 url('~@/assets/fonts/Eurostile-Medium.woff2') format('woff2'),
-		 url('~@/assets/fonts/Eurostile-Med.svg') format('svg'),
-		 url('~@/assets/fonts/Eurostile-Medium.eot') format('eot');
-	font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-	font-family:'Eurostile';
-	src: url('~@/assets/fonts/Eurostile-HeaIta.ttf') format('ttf'),
-		 url('~@/assets/fonts/Eurostile-HeaIta.woff') format('woff'),
-		 url('~@/assets/fonts/Eurostile-HeaIta.woff2') format('woff2'),
-		 url('~@/assets/fonts/Eurostile-HeaIta.svg') format('svg'),
-		 url('~@/assets/fonts/Eurostile-HeaIta.eot') format('eot');
-	font-weight: 500;
-	font-style: italic;
-}
-
-
-@font-face {
-	font-family:'Eurostile';
-	src: url('~@/assets/fonts/Eurostile-Reg.ttf') format('ttf'),
-		 url('~@/assets/fonts/Eurostile-Reg.woff') format('woff'),
-		 url('~@/assets/fonts/Eurostile-Regular.woff2') format('woff2'),
-		 url('~@/assets/fonts/Eurostile-Reg.svg') format('svg'),
-		 url('~@/assets/fonts/Eurostile-Regular.eot') format('eot');
-	font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-	font-family:'Eurostile';
-	src: url('~@/assets/fonts/Eurostile-RegObl.ttf') format('ttf'),
-		 url('~@/assets/fonts/Eurostile-RegObl.woff') format('woff'),
-		 url('~@/assets/fonts/Eurostile-RegObl.woff2') format('woff2'),
-		 url('~@/assets/fonts/Eurostile-RegObl.svg') format('svg'),
-		 url('~@/assets/fonts/Eurostile-RegObl.eot') format('eot');
-	font-weight: 400;
-	font-style: italic;
-}
-
-
-@font-face {
-	font-family:'Eurostile';
-	src: url('~@/assets/fonts/Eurostile-BolObl.ttf') format('ttf'),
-		 url('~@/assets/fonts/Eurostile-BolObl.woff') format('woff'),
-		 url('~@/assets/fonts/Eurostile-BolObl.woff2') format('woff2'),
-		 url('~@/assets/fonts/Eurostile-BolObl.svg') format('svg'),
-		 url('~@/assets/fonts/Eurostile-BolObl.eot') format('eot');
-	font-weight: 700;
-	font-style: italic;
-}
-
-@font-face {
-	font-family:'Courier New';
-	src: url('~@/assets/fonts/special/CourierNewPSMT.ttf') format('ttf'),
-		 url('~@/assets/fonts/special/CourierNewPSMT.woff') format('woff'),
-		 url('~@/assets/fonts/special/cour.woff2') format('woff2'),
-		 url('~@/assets/fonts/special/CourierNewPSMT.svg') format('svg'),
-		 url('~@/assets/fonts/special/cour.eot') format('eot');
-	font-weight: 400;
-	font-style: italic;
-}
-
-@font-face {
-	font-family:'Courier New';
-	src: url('~@/assets/fonts/special/CourierNewPS-BoldMT.ttf') format('ttf'),
-		 url('~@/assets/fonts/special/CourierNewPS-BoldMT.woff') format('woff'),
-		 url('~@/assets/fonts/special/courbd.woff2') format('woff2'),
-		 url('~@/assets/fonts/special/CourierNewPS-BoldMT.svg') format('svg'),
-		 url('~@/assets/fonts/special/courbd.eot') format('eot');
-	font-weight: 700;
-	font-style: italic;
-}
-
-
-
-

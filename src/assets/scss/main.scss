@@ -2,13 +2,15 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
 @import "abstracts/breakpoints";
+
 //Layout
 @import "layout/header";
 @import "layout/footer";
+@import "layout/grid";
 
 // Base
 @import "base/reset";
-// @import "base/typography";
+@import "base/typography";
 
 // Views
 @import "views/mainpage/filter";

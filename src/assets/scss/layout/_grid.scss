@@ -1,0 +1,151 @@
+.container{
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+
+.container-fluid{
+    width:100%;
+    margin: 0 auto;
+}
+
+.container--overvisible{
+    overflow: visible;
+}
+
+.container--nopad{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.row{
+    display: grid;
+    grid-gap: 16px;
+    grid-row-gap:0px;
+
+    grid-auto-flow: row;
+    
+    grid-template: 1fr / repeat(12,1fr);
+
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        grid-column: span #{$i};
+    }
+
+    @for $j from 1 through 12{
+        .col-start-#{$j}.col-#{$i}{
+            grid-column:#{$j} / span #{$i};
+        }
+    }
+    
+}
+
+
+
+@include adaptive-2560{
+    .container{
+        max-width: 1920px;
+        
+    }
+}
+
+@include adaptive-1600{
+    .container{
+        max-width: 1140px;
+    }
+}
+
+
+@include adaptive-m{
+    .container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    @for $i from 1 through 12 {
+        .col-md-#{$i} {
+            grid-column: span #{$i};
+        }
+
+        @for $j from 1 through 12{
+            .col-md-start-#{$j}.col-md-#{$i}{
+                grid-column:#{$j} / span #{$i};
+            }
+        }
+    }
+
+
+}
+
+@include adaptive-768{
+    .container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .container_mobile_nopad{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .row{
+        grid-auto-flow: row;
+    }
+
+    @for $i from 1 through 12 {
+        .col-sm-#{$i} {
+            grid-column: span #{$i};
+        }
+
+        @for $j from 1 through 12{
+            .col-sm-start-#{$j}.col-sm-#{$i}{
+                grid-column:#{$j} / span #{$i};
+            }
+        }
+    }
+    
+
+
+}
+
+
+@include adaptive-480{
+    .container{
+        padding-left: 15px;
+        padding-right: 15px;
+
+        &_xs_nopad{
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+
+
+    .container--mobilenopad{
+        padding-left: 0px;
+        padding-right: 0px;
+        
+        .row--mobilepad{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    
+
+    @for $i from 1 through 12 {
+        .col-xs-#{$i} {
+            grid-column: span #{$i};
+        }
+
+        @for $j from 1 through 12{
+            .col-xs-start-#{$j}.col-xs-#{$i}{
+                grid-column:#{$j} / span #{$i};
+            }
+        }
+    }
+
+}
