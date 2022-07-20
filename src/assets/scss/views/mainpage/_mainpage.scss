@@ -1,0 +1,44 @@
+.mainpage {
+	.hero {
+		display: flex;
+	}
+	.podbor {
+		&__card {
+			display: grid;
+			grid-template: auto/1fr 1fr;
+			background: #f6f6f6;
+			border-radius: 5px;
+			padding: 25px;
+			div {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+		}
+		&__title {
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 24px;
+
+			color: #17488b;
+		}
+		&__desc {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 140%;
+
+			color: #252525;
+		}
+		&__btn {
+			padding: 13px 35px;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 19px;
+
+			color: #ffffff;
+
+			background: #e41d2c;
+			border-radius: 5px;
+		}
+	}
+}
