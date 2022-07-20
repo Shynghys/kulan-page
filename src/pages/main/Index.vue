@@ -3,11 +3,16 @@
 		<the-filter />
 		<div class="hero">
 			<div class="slider">
+				<p class="slider__text">
+					Открытие 40-го Mobil 1 Center в г. Алматы
+				</p>
 				<img
 					src="@/assets/img/pages/mainpage/Rectangle 28.png"
 					alt=""
+					class="slider__img"
 				/>
 			</div>
+
 			<div class="podbor">
 				<div class="podbor__card">
 					<div>
@@ -42,13 +47,27 @@
 			</div>
 		</div>
 		<div class="brands">
-			<div class="brands__title">Бренды</div>
+			<div class="brands__block">
+				<div class="brands__title">Бренды</div>
+				<a href="">
+					<div class="brands__btn">
+						Посмотреть все
+						<img src="@/assets/img/icons/arrow.svg" alt="" /></div
+				></a>
+			</div>
+
 			<div class="brands__slider">
-				<div class="brands__item">
-					<img
-						src="@/assets/img/pages/mainpage/brand-logo.png"
-						alt=""
-					/>
+				<div v-for="(item, index) in slider2" :key="index">
+					<a href="" class="brands__item">
+						<img
+							class="brands__img"
+							:src="
+								require(`@/assets/img/pages/mainpage/${item.img}`)
+							"
+							alt=""
+						/>
+						<p class="brands__text">{{ item.text }}</p></a
+					>
 				</div>
 			</div>
 		</div>
@@ -58,15 +77,24 @@
 import TheFilter from "./components/TheFilter.vue";
 export default {
 	name: "MainIndex",
-	components: {
-		TheFilter,
-	},
+
+	components: { TheFilter },
 	data() {
 		return {
-			slider: [],
-			slider2: [],
+			slider: [
+				"@/assets/img/pages/mainpage/Rectangle 28.png",
+				"@/assets/img/pages/mainpage/Rectangle 28.png",
+				"@/assets/img/pages/mainpage/Rectangle 28.png",
+			],
+			slider2: [
+				{ text: "AD BATTERY", link: "", img: "brand-logo.png" },
+				{ text: "MOBIL", link: "", img: "brand-logo1.png" },
+				{ text: "MANN-FILTER", link: "", img: "brand-logo2.png" },
+				{ text: "555", link: "", img: "brand-card3.png" },
+				{ text: "DENSO", link: "", img: "brand-card4.png" },
+				{ text: "FRAM", link: "", img: "brand-card5.png" },
+			],
 		};
 	},
 };
 </script>
-<style scoped></style>

@@ -1,13 +1,26 @@
 <template>
 	<div class="filter">
-		<img src="@/assets/img/pages/mainpage/logo.jpg" alt="" class="icon" />
+		<img
+			src="@/assets/img/pages/mainpage/logo.jpg"
+			alt=""
+			class="filter__icon"
+		/>
 
-		<div class="button">
-			<img
+		<div class="button" @click="toggleMenuStatus">
+			<!-- <img
 				src="@/assets/img/pages/mainpage/fi_menu.svg"
 				alt=""
 				class="button__icon"
-			/>
+			/> -->
+			<button
+				class="hamburger hamburger--spin"
+				:class="menuStatus ? 'is-active' : ''"
+				type="button"
+			>
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
 			<p class="button__text">Категории</p>
 		</div>
 		<div class="search">
@@ -51,6 +64,7 @@
 <script>
 export default {
 	name: "TheFilter",
+
 	data() {
 		return {
 			array: [
@@ -71,7 +85,13 @@ export default {
 					img: "fi_user.svg",
 				},
 			],
+			menuStatus: false,
 		};
+	},
+	methods: {
+		toggleMenuStatus() {
+			this.menuStatus = !this.menuStatus;
+		},
 	},
 };
 </script>

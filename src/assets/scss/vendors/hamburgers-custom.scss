@@ -1,0 +1,29 @@
+.hamburger {
+	padding: 0;
+	margin-right: 10px;
+	padding-top: 5px;
+	&-box {
+		width: 25px;
+	}
+
+	&-inner,
+	&-inner::before,
+	&-inner::after {
+		width: 25px;
+		height: 2px;
+		background-color: #fff;
+	}
+
+	&-inner::before {
+		top: -6px;
+	}
+
+	&-inner::after {
+		bottom: -6px;
+	}
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+	background-color: #fff;
+}

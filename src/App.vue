@@ -20,4 +20,6 @@ export default {
 
 <style lang="scss">
 @import "./assets/scss/main";
+@import "./assets/fonts/stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 </style>
