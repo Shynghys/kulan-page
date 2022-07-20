@@ -5,8 +5,8 @@
 			alt=""
 			class="filter__icon"
 		/>
-
-		<div class="button" @click="toggleMenuStatus">
+		<!-- {{ menuStatus }} -->
+		<div class="button" @click="toggleMenu">
 			<button
 				class="hamburger hamburger--spin"
 				:class="menuStatus ? 'is-active' : ''"
@@ -80,12 +80,15 @@ export default {
 					img: "fi_user.svg",
 				},
 			],
-			menuStatus: false,
 		};
 	},
+	props: {
+		menuStatus: { type: Boolean, required: false, default: () => false },
+	},
 	methods: {
-		toggleMenuStatus() {
-			this.menuStatus = !this.menuStatus;
+		toggleMenu() {
+			console.log("a", this.menuStatus);
+			this.$emit("toggle", 1);
 		},
 	},
 };

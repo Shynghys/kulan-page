@@ -1,6 +1,6 @@
 <template>
 	<div class="mainpage">
-		<the-filter />
+		<the-filter :menuStatus="menuStatus" :toggle="toggleMenuStatus" />
 		<div class="hero">
 			<div class="slider">
 				<p class="slider__text">
@@ -70,17 +70,20 @@
 					>
 				</div>
 			</div>
+			<dropdown-modal v-if="menuStatus"></dropdown-modal>
 		</div>
 	</div>
 </template>
 <script>
 import TheFilter from "./components/TheFilter.vue";
+import DropdownModal from "./components/DropdownModal.vue";
 export default {
 	name: "MainIndex",
 
-	components: { TheFilter },
+	components: { TheFilter, DropdownModal },
 	data() {
 		return {
+			menuStatus: false,
 			slider: [
 				"@/assets/img/pages/mainpage/Rectangle 28.png",
 				"@/assets/img/pages/mainpage/Rectangle 28.png",
@@ -95,6 +98,12 @@ export default {
 				{ text: "FRAM", link: "", img: "brand-card5.png" },
 			],
 		};
+	},
+	methods: {
+		toggleMenuStatus() {
+			console.log("b", this.menuStatus);
+			this.menuStatus = !this.menuStatus;
+		},
 	},
 };
 </script>
