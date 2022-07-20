@@ -26,15 +26,15 @@
 				</div>
 				<div class="podbor__card">
 					<div>
-						<div class="podbor__title">Подбор по модели</div>
+						<div class="podbor__title">Подбор масла</div>
 						<div class="podbor__desc">
-							Подбор запчастей по модели автомобиля
+							Подбор масел по VIN-коду и модели автомобиля
 						</div>
 						<button class="podbor__btn">Попробовать</button>
 					</div>
 					<div>
 						<img
-							src="@/assets/img/pages/mainpage/blue-car-sellpage-audi@2x 1.svg"
+							src="@/assets/img/pages/mainpage/maslo.svg"
 							alt=""
 						/>
 					</div>
@@ -55,19 +55,18 @@
 	</div>
 </template>
 <script>
-	import TheFilter from "./components/TheFilter.vue";
-	export default {
-		name: "MainIndex",
-		components: {
-			TheFilter,
-		},
-		data() {
-			return {
-				slider: [],
-				slider2: [],
-			};
-		},
-	};
+import TheFilter from "./components/TheFilter.vue";
+export default {
+	name: "MainIndex",
+	components: {
+		TheFilter,
+	},
+	data() {
+		return {
+			slider: [],
+			slider2: [],
+		};
+	},
+};
 </script>
-<style scoped>
-</style>
+<style scoped></style>

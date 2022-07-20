@@ -6,53 +6,74 @@
 			<img
 				src="@/assets/img/pages/mainpage/fi_menu.svg"
 				alt=""
-				class="icon-mini"
+				class="button__icon"
 			/>
 			<p class="button__text">Категории</p>
 		</div>
 		<div class="search">
-			<div class="block">
+			<div class="search__block">
 				<p>Название</p>
 				<img
 					src="@/assets/img/layout/Vector.svg"
 					alt=""
-					class="block__icon-mini"
+					class="search__icon-mini"
 				/>
 			</div>
-			<div class="line"></div>
-			<input type="text" placeholder="Поиск по названию товара" />
+			<div class="search__line"></div>
+			<input
+				class="search__input"
+				type="text"
+				placeholder="Поиск по названию товара"
+			/>
 			<img
 				src="@/assets/img/layout/fi_map-pin.svg"
 				alt=""
-				class="block__icon"
+				class="search__icon"
 			/>
 		</div>
 		<div class="services">
-			<div class="block">
+			<div
+				class="services__block"
+				v-for="(item, index) in array"
+				:key="index"
+			>
 				<img
-					src="@/assets/img//pages/mainpage/fi_box.svg"
+					:src="require(`@/assets/img/pages/mainpage/${item.img}`)"
 					alt=""
-					class="icon"
+					class="services__icon"
 				/>
-				<p>Заказы</p>
-			</div>
-			<div class="block">
-				<img
-					src="@/assets/img//pages/mainpage/fi_box.svg"
-					alt=""
-					class="icon"
-				/>
-				<p>Заказы</p>
+				<p class="services__text">{{ item.text }}</p>
 			</div>
 		</div>
 	</div>
 </template>
 
 <script>
-	export default {
-		name: "TheFilter",
-	};
+export default {
+	name: "TheFilter",
+	data() {
+		return {
+			array: [
+				{
+					text: "Заказы",
+					img: "fi_box.svg",
+				},
+				{
+					text: "Избранное",
+					img: "fi_heart.svg",
+				},
+				{
+					text: "Корзина",
+					img: "fi_shopping-cart.svg",
+				},
+				{
+					text: "ИП Де...",
+					img: "fi_user.svg",
+				},
+			],
+		};
+	},
+};
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>
