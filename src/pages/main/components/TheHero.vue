@@ -78,16 +78,12 @@ export default {
 				wrapAround: true,
 
 				pageDots: false,
-				autoPlay: 3000,
+				// autoPlay: 5000,
 			},
 		};
 	},
 	mounted() {},
 	methods: {
-		toggleMenuStatus() {
-			console.log("b", this.menuStatus);
-			this.menuStatus = !this.menuStatus;
-		},
 		next() {
 			this.$refs.flickity.next();
 		},

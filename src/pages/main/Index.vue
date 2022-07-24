@@ -1,39 +1,46 @@
 <template>
 	<div class="mainpage">
-		<the-filter :menuStatus="menuStatus" :toggle="toggleMenuStatus" />
-		<the-hero />
-		<div class="brands">
-			<div class="brands__block">
-				<div class="brands__title">Бренды</div>
-				<a href="">
-					<div class="brands__btn">
-						Посмотреть все
-						<img src="@/assets/img/icons/arrow.svg" alt="" /></div
-				></a>
-			</div>
-			<flickity
-				class="flickity"
-				ref="flickity"
-				:options="flickityOptions"
-			>
-				<div
-					v-for="(item, index) in slider2"
-					:key="index"
-					class="carousel-cell"
-				>
-					<a href="" class="brands__item">
-						<img
-							class="brands__img"
-							:src="
-								require(`@/assets/img/pages/mainpage/${item.img}`)
-							"
-							alt=""
-						/>
-						<p class="brands__text">{{ item.text }}</p></a
-					>
+		<the-filter :menuStatus="menuStatus" @toggle="toggleMenuStatus" />
+		<dropdown-modal v-if="menuStatus"></dropdown-modal>
+
+		<div class="app__container container">
+			<the-hero />
+			<div class="brands">
+				<div class="brands__block">
+					<div class="brands__title">Бренды</div>
+					<a href="">
+						<div class="brands__btn">
+							Посмотреть все
+							<img
+								src="@/assets/img/icons/arrow.svg"
+								alt=""
+							/></div
+					></a>
 				</div>
-			</flickity>
-			<dropdown-modal v-if="menuStatus"></dropdown-modal>
+				<flickity
+					class="flickity"
+					ref="flickity"
+					:options="flickityOptions"
+				>
+					<div
+						v-for="(item, index) in slider2"
+						:key="index"
+						class="carousel-cell"
+					>
+						<a href="" class="brands__item">
+							<img
+								class="brands__img"
+								:src="
+									require(`@/assets/img/pages/mainpage/${item.img}`)
+								"
+								alt=""
+							/>
+							<p class="brands__text">{{ item.text }}</p></a
+						>
+					</div>
+				</flickity>
+			</div>
+			<div v-if="menuStatus" class="overflow"></div>
 		</div>
 	</div>
 </template>
@@ -77,8 +84,9 @@ export default {
 	mounted() {},
 	methods: {
 		toggleMenuStatus() {
-			console.log("b", this.menuStatus);
+			// console.log("b", this.menuStatus);
 			this.menuStatus = !this.menuStatus;
+			this.$emit("toggleMenu");
 		},
 		next() {
 			this.$refs.flickity.next();

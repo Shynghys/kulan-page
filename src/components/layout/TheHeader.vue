@@ -1,7 +1,7 @@
 <template>
 	<!-- :class="menuStatus ? 'header--menuOpened' : ''" -->
-	<div class="container header-container">
-		<header class="header" id="header">
+	<div class="header">
+		<header class="header-container container" id="header">
 			<div class="header__left">
 				<div class="block">
 					<img
