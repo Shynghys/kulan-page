@@ -46,6 +46,9 @@
 					v-for="(item, index) in array"
 					:key="index"
 				>
+					<div v-if="item.notif" class="services__notification">
+						{{ item.notif }}
+					</div>
 					<img
 						:src="
 							require(`@/assets/img/pages/mainpage/${item.img}`)
@@ -70,6 +73,7 @@ export default {
 				{
 					text: "Заказы",
 					img: "fi_box.svg",
+					notif: 2,
 				},
 				{
 					text: "Избранное",

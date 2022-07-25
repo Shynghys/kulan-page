@@ -74,8 +74,9 @@
 		}
 		&__icon {
 			&-mini {
-				width: 8px;
-				height: 4px;
+				margin-left: 5px;
+				width: 12px;
+				height: 10px;
 			}
 		}
 		&__line {
@@ -94,6 +95,7 @@
 		display: flex;
 		gap: 35px;
 		&__block {
+			position: relative;
 			cursor: pointer;
 			display: flex;
 			flex-direction: column;
@@ -110,7 +112,25 @@
 			line-height: 17px;
 			color: #252525;
 		}
+		&__notification {
+			position: absolute;
+			padding: 1px 5px;
+			top: -10px;
+			right: 3px;
+			background: #e41d2c;
+			border: 1px solid #ffffff;
+			border-radius: 50%;
+			font-family: "Inter";
+			font-style: normal;
+			font-weight: 500;
+			font-size: 13px;
+			line-height: 15px;
+			text-align: center;
+
+			color: #ffffff;
+		}
 	}
+
 	@include adaptive-480 {
 		display: grid;
 		grid-template-areas:

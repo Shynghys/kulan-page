@@ -25,7 +25,11 @@
 					:key="index"
 				>
 					<div class="block__item">
-						<p class="block__text" v-html="item"></p>
+						<p
+							class="block__text"
+							v-html="item"
+							:style="item == 'Sale%' ? 'color: #E41D2C;' : ''"
+						></p>
 					</div>
 				</router-link>
 			</div>
@@ -37,15 +41,15 @@
 						alt=""
 						class="block__icon"
 					/>
-					<p>38 420</p>
+					<p style="font-weight: 700">38 420</p>
 				</div>
 				<div class="block">
 					<img
 						src="@/assets/img/layout/Vector.svg"
 						alt=""
-						class="block__icon-mini"
+						class="block__icon-mini blue"
 					/>
-					<p>Кошелек</p>
+					<p class="blue case">Кошелек</p>
 					<img
 						src="@/assets/img/layout/Vector1.svg"
 						alt=""

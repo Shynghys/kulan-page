@@ -76,7 +76,7 @@ export default {
 			flickityOptions: {
 				prevNextButtons: true,
 				wrapAround: true,
-
+				imagesLoaded: true,
 				pageDots: false,
 				// autoPlay: 5000,
 			},
